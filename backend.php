@@ -58,7 +58,7 @@ $conn=mysqli_connect($GLOBALS['hotsaddr'],$GLOBALS['usernm'],$GLOBALS['userpassw
 	{
 		
 			$temp = array('msg' =>"connection error");
-		mysqli_close($conn);
+		//mysqli_close($conn);
 
 		echo json_encode( $temp );	
 	}  
@@ -95,10 +95,3 @@ if(isset($_POST['give_h'] ))
 {
   get_top10();
 }
-
-
-
-
-
-
-?>

@@ -10,15 +10,13 @@ $correct_ans = $_POST['correct_option'];
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "test";
-$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-if(!$con)
-{
-    die("failed to connect!");
-
-}else{
-    $sql = "insert into mcq(question,option1,option2,option3,option4,correct_ans) values('$question','$option1','$option2','$option3','$option4','$correct_ans')";
-if (mysqli_query($con, $sql)) {
+$dbname = "quiz";
+$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+if (!$con) {
+  die("failed to connect!");
+} else {
+  $sql = "insert into Quiz(question,option1,option2,option3,option4,correct_ans) values('$question','$option1','$option2','$option3','$option4','$correct_ans')";
+  if (mysqli_query($con, $sql)) {
     echo "New record created successfully";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
