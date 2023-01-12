@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="que_style.css">
+    <title>Quiz Enter Page</title>
+</head>
+<body>
+    <div class="center">
+    <form action="connect.php" method="post">
+        <h1>Quiz</h1>
+        <div class="inputbox">
+        <input type="text" required="required" name="question_input">
+        <span>Enter the Question</span>
+    </div>
+        <div class="inputbox">
+        <input type="text" name="option1" id=""  required="required">
+        <span>Option1</span>
+    </div>
+
+        <div class="inputbox">
+        <input type="text" name="option2" id=""  required="required">
+        <span>Option2</span>
+    </div>
+        
+        <div class="inputbox">
+        <input type="text" name="option3" id=""  required="required">
+        <span>Option3</span>
+    </div>
+        
+        <div class="inputbox">
+        <input type="text" name="option4" id=""  required="required">
+        <span>Option4</span>
+    </div>
+       
+
+        <div class="inputbox">
+        <label for="correct_option">choose correct option:</label>
+        <select name="correct_option" id="correct_option">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+            <option value="option4">option4</option>
+        </select>
+        </div>
+        
+        <div class="inputbox">
+            <!-- <input type="button" value="submit"> -->
+            <button type="submit" value="sumbit">Submit</button>
+          </div>
+    </form>
+</div>
+</body>
+</html>

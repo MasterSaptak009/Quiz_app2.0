@@ -37,6 +37,7 @@ session_start();
         <a href="./game.html" class="btn">Play</a>
         <a href="./highscores.html" id="highscore-btn" class="btn">High Score
         <i class="fas fa-crown"></i></a>
+        <a href="add_que.html"><button type="button" class="btn btn-outline-dark">Add Question</button></a>
       </div>
 
     </div>
